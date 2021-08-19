@@ -1,0 +1,1 @@
+docker exec -i mongodb bash -c "mongorestore --db ecommerce /dump/ecommerce"

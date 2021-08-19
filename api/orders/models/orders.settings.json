@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "location": {
+      "type": "json"
+    },
+    "From": {
+      "type": "json"
+    },
+    "To": {
+      "type": "json"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "inProgress",
+        "done"
+      ]
+    },
+    "price": {
+      "type": "float"
+    },
+    "store": {
+      "type": "string"
+    },
+    "vehicle": {
+      "model": "vehicle"
+    }
+  }
+}
