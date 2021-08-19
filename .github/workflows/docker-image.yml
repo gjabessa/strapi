@@ -15,7 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
    # - name: Build the Docker image
-      run: docker-compose up
     - name: SSH Auto Deploy
     # You may pin to the exact commit or the version.
     # uses: hengkx/ssh-deploy@18d0dcacae71ee6694ddfabc3536b524414d7ad5
@@ -34,4 +33,4 @@ jobs:
         # remote target
         TARGET: /strapi
         # upload success execute command
-        #AFTER_COMMAND: # optional
+        AFTER_COMMAND: docker-compose up
