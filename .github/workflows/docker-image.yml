@@ -31,6 +31,6 @@ jobs:
         # local path
         SOURCE: .
         # remote target
-        TARGET: /strapi
+        TARGET: .
         # upload success execute command
-        AFTER_COMMAND: ls && docker-compose up
+        AFTER_COMMAND: docker-compose up
