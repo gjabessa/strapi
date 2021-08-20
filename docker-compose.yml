@@ -11,6 +11,7 @@ services:
         command: npm run start
         volumes: 
             - ./build:/usr/src/app/build
+            - ./public:/user/src/app/public
         restart: always
     db: 
         image: mongo
