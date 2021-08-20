@@ -6,6 +6,6 @@ COPY package.json .
 
 COPY . .
 
-RUN npm install 
+RUN npm install && npm run build
 
 EXPOSE 80

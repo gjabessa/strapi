@@ -8,8 +8,8 @@ services:
             - db
         environment: 
             - NODE_ENV=dev
-        command:
-            npm run start
+        command: npm run start
+
         restart: always
     db: 
         image: mongo
