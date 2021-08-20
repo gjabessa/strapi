@@ -9,8 +9,6 @@ services:
         environment: 
             - NODE_ENV=dev
         command: npm run start
-        volumes: 
-            - ./build:./build
         restart: always
     db: 
         image: mongo
