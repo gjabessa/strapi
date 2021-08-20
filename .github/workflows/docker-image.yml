@@ -33,4 +33,4 @@ jobs:
         # remote target
         TARGET: ./strapi
         # upload success execute command
-        AFTER_COMMAND: docker-compose up
+        AFTER_COMMAND: docker-compose up -d
