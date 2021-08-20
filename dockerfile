@@ -6,6 +6,7 @@ COPY package.json .
 
 COPY . .
 
+RUN export NODE_OPTIONS=--max_old_space_size=4096
 RUN npm install && npm run build
 
 EXPOSE 80
