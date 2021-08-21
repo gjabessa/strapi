@@ -10,8 +10,8 @@ services:
             - NODE_ENV=dev
         command: npm run start
         volumes: 
-            - ./build:/usr/src/app/build
-            - ./public:/user/src/app/public
+            - ./build:/usr/local/app/build
+            - ./public:/user/local/app/public
         restart: always
     db: 
         image: mongo
