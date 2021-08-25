@@ -8,7 +8,7 @@ services:
             - db
         environment: 
             - NODE_ENV=dev
-        command: npm run develop
+        command: npm run start
         volumes: 
             - ./build:/usr/local/app/build
             - ./public:/user/local/app/public
