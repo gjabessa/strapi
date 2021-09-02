@@ -40,6 +40,11 @@
     },
     "vehicle": {
       "model": "vehicle"
+    },
+    "Cart": {
+      "type": "component",
+      "repeatable": true,
+      "component": "custom.cart"
     }
   }
 }

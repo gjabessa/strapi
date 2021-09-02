@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_custom_carts",
+  "info": {
+    "name": "cart",
+    "icon": "shopping-cart"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "Amount": {
+      "type": "integer"
+    }
+  }
+}
