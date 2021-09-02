@@ -40,9 +40,6 @@
     },
     "vehicle": {
       "model": "vehicle"
-    },
-    "products": {
-      "collection": "product"
     }
   }
 }
