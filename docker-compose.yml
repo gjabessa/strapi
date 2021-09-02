@@ -10,15 +10,10 @@ services:
             - NODE_ENV=dev
         command: npm run start
         volumes: 
-            - ./build:/usr/local/app/build
-            - ./public:/user/local/app/public
+            - ./:/usr/local/app/
+            - /usr/local/app/node_modules
         restart: always
     db: 
         image: mongo
         container_name: mongodb
-        restart: unless-stopped
-        volumes: 
-            - ./dump:/dump
-
-
-        
+        restart: unless-stopped       
